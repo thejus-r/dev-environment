@@ -28,7 +28,7 @@ return {
           },
         },
       },
-      filter = {
+      filters = {
         custom = {".DS_Store"},
       },
       git = {
