@@ -1,0 +1,22 @@
+# theme
+theme = rose-pine
+
+# window
+title = "Ghostty"
+window-padding-x = 12
+window-padding-y = 12
+window-colorspace = "display-p3"
+
+# font
+font-family = "CaskaydiaCove Nerd Font Mono"
+font-size = 16
+
+# background
+background-opacity = 0.8
+background-blur-radius = 255
+
+#cursor
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
