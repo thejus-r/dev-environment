@@ -30,10 +30,9 @@ return {
       },
       filters = {
         dotfiles = false,
-        custom = {".DS_Store"},
-      },
-      git = {
-        ignore = false,
+        git_ignored = false,
+        custom = {".DS_Store", ".git"},
+        exclude= {".gitignore",".env", ".envrc"}
       },
     })
 
