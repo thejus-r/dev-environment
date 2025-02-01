@@ -1,10 +1,13 @@
-return {
-    "folke/tokyonight.nvim",
-  lazy = false,
+return { 
+  "catppuccin/nvim", 
+  name = "catppuccin",
   priority = 1000,
-  opts = {},
+  config = function()
+    local theme = require("catppuccin")
 
-  config = function ()
-    vim.cmd.colorscheme "tokyonight-night"
-  end
+    theme.setup()
+
+    vim.cmd.colorscheme "catppuccin"
+
+  end,
 }

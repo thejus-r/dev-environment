@@ -1,4 +1,4 @@
-    # theme
+# theme
 theme = tokyonight_night
 
 # window
@@ -6,6 +6,7 @@ title = "Ghostty"
 window-padding-x = 4
 window-padding-y = 4
 window-colorspace = "display-p3"
+window-padding-color = "extend"
 
 # font
 font-family = "CaskaydiaCove Nerd Font Mono"

@@ -1,11 +1,12 @@
 return {
-  "williamboman/mason.nvim",
-    dependencies = {
+ "williamboman/mason.nvim",
+  dependencies = {
     "williamboman/mason-lspconfig.nvim",
   },
 
   config = function()
     local mason = require("mason")
+
     local mason_lspconfig = require("mason-lspconfig")
 
     mason.setup({
@@ -13,22 +14,16 @@ return {
         icons = {
           package_installed = "✓",
           package_pending = "➜",
-          package_uninstalled = "✗"
-        }
-      }
+          package_uninstalled = "✗",
+        },
+      },
     })
 
     mason_lspconfig.setup({
+      -- list of servers for mason to install
       ensure_installed = {
-        "ts_ls",
         "lua_ls",
-        "gopls",
-        "astro",
-        "cssls",
-        "tailwindcss",
-        "prismals",
-        "rust_analyzer"
-      }
+      },
     })
   end,
 }
